@@ -3,7 +3,7 @@
 
 <strike> - should be able to create a new customer: Para que esse teste passe, sua aplicação deve permitir que um cliente seja criado, e retorne um json com o cliente criado. </strike>
 
-- should not be able to create a customer with one e-mail thats already registered: Para que esse teste passe, sua aplicação deve retornar um erro quando você tentar cadastrar um cliente com um e-mail que já esteja cadastrado no banco de dados.
+<strike> - should not be able to create a customer with one e-mail thats already registered: Para que esse teste passe, sua aplicação deve retornar um erro quando você tentar cadastrar um cliente com um e-mail que já esteja cadastrado no banco de dados. </strike>
 
 - should be able to create a new product: Para que esse teste passe, sua aplicação deve permitir que um produto seja criado, e retorne um json com o produto criado.
 
