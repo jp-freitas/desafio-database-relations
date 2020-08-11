@@ -57,12 +57,14 @@ class CreateOrderService {
 
     const checkExistentProductsQuantity = products.filter(
       product =>
-        existInProducts.filter(p => product.id === p.id)[0].quantity <=
+        existInProducts.filter(p => p.id === product.id)[0].quantity <=
         product.quantity,
     );
 
     if (checkExistentProductsQuantity.length) {
-      throw new AppError('Products quantity unavailable for order');
+      throw new AppError(
+        `The quantity ${checkExistentProductsQuantity[0].quantity} is not available for ${checkExistentProductsQuantity[0].id}`,
+      );
     }
 
     const formattedProducts = products.map(product => ({
